@@ -1,3 +1,4 @@
+const REACT_APP_QR_CODE_GENERATOR_BE_URL = process.env.REACT_APP_QR_CODE_GENERATOR_BE_URL;
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
@@ -11,7 +12,7 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`${process.env.REACT_APP_QR_CODE_GENERATOR_BE_URL}/generateQR`, {
+      const response = await axios.get(`${REACT_APP_QR_CODE_GENERATOR_BE_URL}/generateQR`, {
         params: { url: text },
       });
       setQrCode(response.data);
