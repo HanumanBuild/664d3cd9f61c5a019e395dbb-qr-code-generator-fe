@@ -15,3 +15,5 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+REACT_APP_QR_CODE_GENERATOR_BE_URL=$QR_CODE_GENERATOR_BE_URL

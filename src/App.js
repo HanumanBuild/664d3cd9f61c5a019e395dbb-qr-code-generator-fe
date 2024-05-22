@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
 
+// Defining the App component
 function App() {
   const [text, setText] = useState('');
   const [qrCode, setQrCode] = useState('');
 
+  // Handling form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -18,6 +20,7 @@ function App() {
     }
   };
 
+  // Rendering the component
   return (
     <div className="App">
       <h1 className="text-3xl font-bold mb-4">QR Code Generator</h1>
@@ -53,4 +56,5 @@ function App() {
   );
 }
 
+// Exporting the App component
 export default App;
