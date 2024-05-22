@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import axios from 'axios';
 
 const backendUrl = process.env.REACT_APP_QR_CODE_GENERATOR_BE_URL;
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
     <App />
-  </React.StrictMode>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 const response = await axios.get(`${backendUrl}/generateQR`, {
