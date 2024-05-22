@@ -2,7 +2,15 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#1DA1F2',
+        secondary: '#14171A',
+      },
+      fontFamily: {
+        sans: ['Graphik', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 };
