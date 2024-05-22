@@ -14,6 +14,12 @@ root.render(
   </React.StrictMode>
 );
 
+// Replace the faulty lines with the correct reference
+// Before:
+// const response = await axios.get(`${REACT_APP_QR_CODE_GENERATOR_BE_URL}/generateQR`, {
+// After:
+const response = await axios.get(`${backendUrl}/generateQR`, {
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
