@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import axios from 'axios';
 
+// Ensure the environment variable is correctly referenced
 const backendUrl = process.env.REACT_APP_QR_CODE_GENERATOR_BE_URL;
 
 ReactDOM.render(
@@ -12,9 +13,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-const response = await axios.get(`${backendUrl}/generateQR`, {
-  params: { url: text },
-});
 
 reportWebVitals();
