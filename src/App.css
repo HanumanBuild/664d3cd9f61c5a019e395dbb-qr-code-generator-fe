@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  padding: 2rem;
 }
 
 .App-logo {
@@ -35,4 +36,19 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Adding styles for form container */
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding styles for QR code */
+.qr-code {
+  margin-top: 2rem;
 }
